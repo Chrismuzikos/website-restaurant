@@ -31,7 +31,7 @@ p {
   font-size: 16px;
 }
 
-.testBorder {
+.border {
   padding-top: 15px;
   border-top: 1px solid rgba(204, 153, 0, 0.75);
 
@@ -114,6 +114,7 @@ header img {
 
 #ingredients {
   background: url(img/ingredients-bg.jpg);
+  background-size: cover;
 }
 
 #fineIngredients {
@@ -145,11 +146,13 @@ header img {
 
 .special {
   border: 1px solid #c90;
-  padding: 0 0 0 0;
+  padding: 0 10px 0 10px;
+  margin-top: 40px;
 }
 
 #reviews {
   background: url(img/reviews-bg.jpg);
+  background-size: cover;
 }
 
 #guestReviews {
@@ -160,4 +163,12 @@ header img {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 50px 60px 50px 60px;
+}
+
+.colMenu {
+  padding: 0 30px 0 30px;
+}
+
+.listMenu {
+  padding: 0 10px 0 10px;
 }
