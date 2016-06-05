@@ -104,6 +104,7 @@ header img {
 
 #about {
   padding-top: 60px;
+  padding-bottom: 40px;
   background: url(img/contemporary-china.png);
 }
 
@@ -119,9 +120,7 @@ header img {
 
 #fineIngredients {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-width: 1px;
-  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.8);
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 50px 60px 50px 60px;
@@ -141,7 +140,16 @@ header img {
 
 #menu {
   padding-top: 60px;
+  padding-bottom: 40px;
   background: url(img/cream-pixels.png);
+}
+
+.colMenu {
+  padding: 0 30px 0 30px;
+}
+
+.listMenu {
+  padding: 0 10px 0 10px;
 }
 
 .special {
@@ -156,7 +164,7 @@ header img {
   right: 15px;
 }
 
-.noMargin {
+.specialItem p {
   margin-bottom: 0;
 }
 
@@ -167,18 +175,21 @@ header img {
 
 #guestReviews {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-width: 1px;
-  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.8);
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 50px 60px 50px 60px;
 }
 
-.colMenu {
-  padding: 0 30px 0 30px;
+#guestReviews p {
+  padding-top: 30px;
 }
 
-.listMenu {
-  padding: 0 10px 0 10px;
+#quote {
+  color: #c5c5c5;
+  position: relative;
+  font-size: 30px;
+  right: 5px;
+  bottom: 5px;
+  font-weight: lighter;
 }
