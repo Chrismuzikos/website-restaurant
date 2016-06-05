@@ -191,7 +191,7 @@ img.displayed {
 }
 
 #quote {
-  color: #c5c5c5;
+  color: rgb(155, 156, 157);
   position: relative;
   font-size: 30px;
   right: 5px;
