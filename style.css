@@ -53,6 +53,11 @@ header img {
   margin-bottom: 50px;
 }
 
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .button {
   font-family: 'Lato', sans-serif;
