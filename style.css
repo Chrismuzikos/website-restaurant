@@ -147,7 +147,17 @@ header img {
 .special {
   border: 1px solid #c90;
   padding: 0 10px 0 10px;
-  margin-top: 40px;
+}
+
+.specialItem {
+  background-color: #c90;
+  color: #fff;
+  position: relative;
+  right: 15px;
+}
+
+.noMargin {
+  margin-bottom: 0;
 }
 
 #reviews {
