@@ -1,3 +1,11 @@
+/*--- Google fonts ---*/
+@import url("https://fonts.googleapis.com/css?family=Lato|Yeseva+One");
+
+/*--- Components design ---*/
+/*@import url("components/banner.css");*/
+/*@import url("components/navbar.css");*/
+/*@import url("components/header.css");*/
+
 body {
   margin: 0;
 }
