@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Yeseva+One");
 
 /*--- Components design ---*/
-/*@import url("components/banner.css");*/
-/*@import url("components/navbar.css");*/
-/*@import url("components/header.css");*/
+@import url("components/banner.css");
+@import url("components/navbar.css");
+@import url("components/header.css");
+@import url("components/button.css");
 
 body {
   margin: 0;
@@ -14,14 +15,14 @@ body {
   color: #c90;
 }
 
-h1 {
+/*h1 {
   font-family: 'Yeseva One', cursive;
   font-size: 5vw;
   font-weight: lighter;
   line-height: 1.5em;
   color: #fff;
   margin: 0 0 40px 0;
-}
+}*/
 
 h2 {
   font-family: 'Yeseva One', cursive;
@@ -54,65 +55,17 @@ hr {
 header {
   background: url(img/header-bg.jpg);
   background-size: cover;
-  padding: 230px 0 150px 0;
+  /*padding: 230px 0 150px 0;*/
 }
 
-header img {
+/*header img {
   margin-bottom: 50px;
-}
+}*/
 
 img.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.button {
-  font-family: 'Lato', sans-serif;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700px;
-  padding: 1em 3em;
-  margin-top: 20px;
-  text-decoration: none;
-}
-
-.button:focus {
-  color: #fff;
-  text-decoration: none;
-}
-
-.button-black {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-}
-
-.button-black:hover {
-  text-decoration: none;
-  color: #fff;
-  background: #000;
-}
-
-.button-white {
-  background-color: rgba(255, 255, 255, 0.15);
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  margin-left: 30px;
-}
-
-.button-white:hover {
-  text-decoration: none;
-  color: #fff;
-  background: 0 0;
-}
-
-@media screen and (max-width: 640px) {
-  .button-white {
-    margin-left: 0;
-  }
 }
 
 #about {
