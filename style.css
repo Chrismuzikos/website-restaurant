@@ -13,7 +13,7 @@ body {
 }
 
 .yellow {
-  color: #c90;
+  color: #dab33e;
 }
 
 /*h1 {
@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-  color: #c90;
+  color: #dab33e;
   font-family: 'Yeseva One', cursive;
   padding-bottom: 5px;
 }
@@ -120,12 +120,12 @@ img.displayed {
 }
 
 .special {
-  border: 1px solid #c90;
+  border: 1px solid #dab33e;
   padding: 0 10px 0 10px;
 }
 
 .specialItem {
-  background-color: #c90;
+  background-color: #dab33e;
   color: #fff;
   position: relative;
   right: 15px;
