@@ -16,15 +16,6 @@ body {
   color: #dab33e;
 }
 
-/*h1 {
-  font-family: 'Yeseva One', cursive;
-  font-size: 5vw;
-  font-weight: lighter;
-  line-height: 1.5em;
-  color: #fff;
-  margin: 0 0 40px 0;
-}*/
-
 h2 {
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
@@ -56,12 +47,7 @@ hr {
 header {
   background: url(img/header-bg.jpg);
   background-size: cover;
-  /*padding: 230px 0 150px 0;*/
 }
-
-/*header img {
-  margin-bottom: 50px;
-}*/
 
 img.displayed {
     display: block;

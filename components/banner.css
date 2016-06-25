@@ -1,14 +1,9 @@
 .banner {
   color: white;
   text-align: center;
-  height: 600px;
-  /*height: calc(100vh - 70px);*/
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  /*background-size: cover !important;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 120px 0 140px 0;
 }
+
 .banner h1 {
   font-family: 'Yeseva One', cursive;
   font-size: 70px;
@@ -25,6 +20,9 @@
 @media screen and (max-width: 768px) {
   .banner h1 {
     font-size: 50px;
+  }
+  .banner {
+    padding-top: 50px;
   }
 }
 
