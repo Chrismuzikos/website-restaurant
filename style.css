@@ -4,12 +4,16 @@
 /*--- Components design ---*/
 @import url("components/banner.css");
 @import url("components/navbar.css");
-@import url("components/header.css");
+/*@import url("components/header.css");*/
 @import url("components/button.css");
 
 body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
+}
+
+.m-t-0 {
+  margin-top: 0;
 }
 
 .yellow {
