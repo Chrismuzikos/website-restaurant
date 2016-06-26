@@ -126,6 +126,10 @@ img.displayed {
   background-size: cover;
 }
 
+#reviews p {
+  font-family: 'Yeseva One', cursive;
+}
+
 #guestReviews {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.8);
@@ -145,4 +149,9 @@ img.displayed {
   right: 5px;
   bottom: 5px;
   font-weight: lighter;
+}
+
+#reservations {
+  padding: 70px 0 70px 0;
+  background: url(img/contemporary-china.png);
 }
