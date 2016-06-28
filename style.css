@@ -172,6 +172,7 @@ input {
   border-radius: 0 !important;
 }
 
-select {
-  border-radius: 0 !important;
+select.form-control {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
