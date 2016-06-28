@@ -159,3 +159,19 @@ img.displayed {
   padding: 70px 0 70px 0;
   background: url(img/contemporary-china.png);
 }
+
+#reservations  p:nth-child(2n+1) {
+  margin-top: 30px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+select {
+  border-radius: 0 !important;
+}
