@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Yeseva+One");
 
 /*--- Components design ---*/
-@import url("../components/banner.css");
-@import url("../components/navbar.css");
-@import url("../components/form.css");
-@import url("../components/button.css");
+@import "components/banner";
+@import "components/navbar";
+@import "components/form";
+@import "components/button";
 
 body {
   margin: 0;
@@ -49,7 +49,7 @@ hr {
 }
 
 header {
-  background: url(img/header-bg.jpg);
+  background: url(../img/header-bg.jpg);
   background-size: cover;
 }
 
@@ -62,7 +62,7 @@ img.displayed {
 #about {
   padding-top: 60px;
   padding-bottom: 40px;
-  background: url(img/contemporary-china.png);
+  background: url(../img/contemporary-china.png);
 }
 
 #about p {
@@ -71,7 +71,7 @@ img.displayed {
 }
 
 #ingredients {
-  background: url(img/ingredients-bg.jpg);
+  background: url(../img/ingredients-bg.jpg);
   background-size: cover;
 }
 
@@ -98,7 +98,7 @@ img.displayed {
 #menu {
   padding-top: 60px;
   padding-bottom: 40px;
-  background: url(img/cream-pixels.png);
+  background: url(../img/cream-pixels.png);
 }
 
 .colMenu {
@@ -126,7 +126,7 @@ img.displayed {
 }
 
 #reviews {
-  background: url(img/reviews-bg.jpg);
+  background: url(../img/reviews-bg.jpg);
   background-size: cover;
 }
 
@@ -157,7 +157,7 @@ img.displayed {
 
 #reservations {
   padding: 70px 0 70px 0;
-  background: url(img/contemporary-china.png);
+  background: url(../img/contemporary-china.png);
 }
 
 #reservations  p:nth-child(2n+1) {

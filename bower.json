@@ -1,0 +1,22 @@
+{
+  "name": "website-restaurant",
+  "description": "Exercise from french mooc [Openclassrooms](https://openclassrooms.com/courses/decouper-une-maquette)",
+  "main": "script.js",
+  "authors": [
+    "Christophe <chrismuzikos@gmail.com>"
+  ],
+  "license": "GPLv3",
+  "homepage": "https://github.com/Chrismuzikos/website-restaurant",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "bootstrap-datepicker": "^1.6.1"
+  }
+}

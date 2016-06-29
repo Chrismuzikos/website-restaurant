@@ -17,6 +17,15 @@
   },
   "homepage": "https://github.com/Chrismuzikos/website-restaurant",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-copy": "0.0.2",
+    "gulp-image": "^2.0.1",
+    "gulp-include": "^2.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7",
+    "minimist": "^1.2.0"
   }
 }
