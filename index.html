@@ -9,9 +9,9 @@
     <!-- Import bootstrap et font-awesone cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="/css/datepicker.css">
     <!-- Custom css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -398,9 +398,9 @@
 
                       </div>
 
-                      <div class="form-group text-left">
+                      <div class="form-group text-left" id="date">
                         <label for="date">Date</label>
-                        <input type="date" class="form-control" id="date" placeholder="date *">
+                        <input type="text" class="form-control" id="date" placeholder="date *">
 
                       </div>
                     </div>
@@ -412,8 +412,9 @@
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="your email *">
                       </div>
 
-                      <div class="form-group text-left">
+                      <div class="form-group text-left" id="select">
                         <label class="control-label " for="select1">Party number </label>
+                        <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
                         <select class="form-control" id="select1" name="select1">
                           <option value="" selected disabled>party number</option>
                           <option value="1">1</option>
@@ -439,6 +440,9 @@
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/script.js"></script>
 
   </body>
 </html>
