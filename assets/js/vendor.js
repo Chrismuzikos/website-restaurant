@@ -1,3 +1,3 @@
-//=require ../../bower_components/jquery/jquery.js
-//=require ../../bower_components/bootstrap-sass/assets/javascripts/boostrap.js
-//=require ../../bower_components/bootstrap-datepicker/dit/js/bootstrap-datepicker.js
+//=require jquery/dist/jquery.js
+//=require bootstrap-sass/assets/javascripts/bootstrap.js
+//=require bootstrap-datepicker/dist/js/bootstrap-datepicker.js

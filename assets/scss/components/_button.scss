@@ -7,17 +7,16 @@
   text-decoration: none;
   padding: 15px 50px 15px 50px;
   border-radius: 0;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .button:focus {
-  color: #fff;
   text-decoration: none;
 }
 
 .button-black {
   background-color: rgba(0, 0, 0, 0.5);
-  border-width: 1px;
-  border-style: solid;
   border-color: rgb(0, 0, 0);
 }
 
@@ -29,8 +28,6 @@
 
 .button-white {
   background-color: rgba(255, 255, 255, 0.15);
-  border-width: 1px;
-  border-style: solid;
   border-color: rgb(255, 255, 255);
   margin-left: 30px;
 }

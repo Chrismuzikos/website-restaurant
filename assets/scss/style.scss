@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Yeseva+One");
 
 /*--- Components design ---*/
+@import "components/variables";
 @import "components/banner";
 @import "components/navbar";
 @import "components/form";
@@ -17,7 +18,7 @@ body {
 }
 
 .yellow {
-  color: #dab33e;
+  color: $yellow;
 }
 
 h2 {
