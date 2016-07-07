@@ -19,18 +19,20 @@ nav ul {
   padding: 0 10px 0 10px;
   font-size: 16px;
   font-weight: lighter;
+  padding-top: 42px;
+  // border: 1px solid black;
 }
 
 .navbar-links:hover, .navbar-links:active, .navbar-links:focus {
   color: #fff;
   border-top: 3px solid #fff;
   text-decoration: none;
-  padding-top: 42px;
 }
 
 .navbar-social {
   font-size: 20px;
   color: #dab33e;
+  padding-top: 42px;
 }
 
 .navbar-social:hover {
