@@ -1,0 +1,33 @@
+/* =======================
+   Layout/Reviews
+   ======================= */
+
+#l-reviews {
+  background: url(../img/reviews-bg.jpg);
+  background-size: cover;
+}
+
+#l-reviews  p {
+  font-family: 'Yeseva One', cursive;
+}
+
+#l-reviews-guest {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 50px 60px 50px 60px;
+}
+
+#l-reviews-guest p {
+  padding-top: 30px;
+}
+
+#l-reviews-quote {
+  color: rgb(155, 156, 157);
+  position: relative;
+  font-size: 30px;
+  right: 5px;
+  bottom: 5px;
+  font-weight: lighter;
+}

@@ -1,0 +1,12 @@
+/* =======================
+   Layout/Reservation
+   ======================= */
+
+#l-reservations {
+ padding: 70px 0 70px 0;
+ background: url(../img/contemporary-china.png);
+}
+
+#l-reservations  p:nth-child(2n+1) {
+ margin-top: 30px;
+}

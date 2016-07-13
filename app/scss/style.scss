@@ -2,16 +2,21 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Yeseva+One");
 
 /*--- Components design ---*/
+@import "base";
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/about";
+@import "layout/ingredients";
+@import "layout/menu";
+@import "layout/reviews";
+@import "layout/reservations";
+@import "layout/footer";
+
+
 @import "components/variables";
-@import "components/banner";
-@import "components/navbar";
 @import "components/form";
 @import "components/button";
 
-body {
-  margin: 0;
-  font-family: 'Yeseva One', cursive;
-}
 
 .m-t-0 {
   margin-top: 0;
@@ -21,37 +26,10 @@ body {
   color: $yellow;
 }
 
-h2 {
-  font-family: 'Yeseva One', cursive;
-  font-size: 36px;
-}
-
-h3 {
-  color: #dab33e;
-  font-family: 'Yeseva One', cursive;
-  padding-bottom: 5px;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-}
-
 .border {
   padding-top: 15px;
   border-top: 1px solid rgba(204, 153, 0, 0.75);
 
-}
-
-hr {
-  border : 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(204, 153, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-header {
-  background: url(../img/header-bg.jpg);
-  background-size: cover;
 }
 
 img.displayed {
@@ -60,109 +38,11 @@ img.displayed {
     margin-right: auto;
 }
 
-#about {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background: url(../img/contemporary-china.png);
-}
-
-#about p {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-#ingredients {
-  background: url(../img/ingredients-bg.jpg);
-  background-size: cover;
-}
-
-#fineIngredients {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 50px 60px 50px 60px;
-}
-
-#fineIngredients p {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .circle {
   width: 100px;
   height: 100px;
   border: 5px solid #494d4e;
   margin-right: 19px;
-}
-
-#menu {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background: url(../img/cream-pixels.png);
-}
-
-.colMenu {
-  padding: 0 30px 0 30px;
-}
-
-.listMenu {
-  padding: 0 10px 0 10px;
-}
-
-.special {
-  border: 1px solid #dab33e;
-  padding: 0 10px 0 10px;
-}
-
-.specialItem {
-  background-color: #dab33e;
-  color: #fff;
-  position: relative;
-  right: 15px;
-}
-
-.specialItem p {
-  margin-bottom: 0;
-}
-
-#reviews {
-  background: url(../img/reviews-bg.jpg);
-  background-size: cover;
-}
-
-#reviews p {
-  font-family: 'Yeseva One', cursive;
-}
-
-#guestReviews {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding: 50px 60px 50px 60px;
-}
-
-#guestReviews p {
-  padding-top: 30px;
-}
-
-#quote {
-  color: rgb(155, 156, 157);
-  position: relative;
-  font-size: 30px;
-  right: 5px;
-  bottom: 5px;
-  font-weight: lighter;
-}
-
-#reservations {
-  padding: 70px 0 70px 0;
-  background: url(../img/contemporary-china.png);
-}
-
-#reservations  p:nth-child(2n+1) {
-  margin-top: 30px;
 }
 
 form {
