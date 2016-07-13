@@ -1,8 +1,10 @@
-/*--- Google fonts ---*/
+/* ===========================
+   Google fonts
+   =========================== */
 @import url("https://fonts.googleapis.com/css?family=Lato|Yeseva+One");
 
-/*--- Components design ---*/
 @import "base";
+@import "components/variables";
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/about";
@@ -12,23 +14,17 @@
 @import "layout/reservations";
 @import "layout/footer";
 
-
-@import "components/variables";
 @import "components/form";
 @import "components/button";
 
 
-.m-t-0 {
-  margin-top: 0;
-}
+.m-t-0 { margin-top: 0; }
 
-.yellow {
-  color: $yellow;
-}
+.yellow { color: $color-theme; }
 
 .border {
   padding-top: 15px;
-  border-top: 1px solid rgba(204, 153, 0, 0.75);
+  border-top: 1px solid rgba($color-theme, 0.75);
 
 }
 

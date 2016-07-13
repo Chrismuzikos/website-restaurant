@@ -1,6 +1,6 @@
 .button {
-  font-family: 'Lato', sans-serif;
-  color: #fff;
+  font-family: $font-variant;
+  color: $color-light;
   font-size: 18px;
   font-weight: 700px;
   margin-top: 20px;
@@ -11,37 +11,35 @@
   border-style: solid;
 }
 
-.button:focus {
-  text-decoration: none;
-}
+.button:focus { text-decoration: none; }
 
 .button-black {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-color: rgb(0, 0, 0);
+  background-color: rgba($color_dark, 0.5);
+  border-color: $color_dark;
 }
 
 .button-black:hover {
   text-decoration: none;
-  color: #fff;
-  background: #000;
+  color: $color-light;
+  background: $color_dark;
 }
 
 .button-white {
-  background-color: rgba(255, 255, 255, 0.15);
-  border-color: rgb(255, 255, 255);
+  background-color: rgba($color-light, 0.15);
+  border-color: $color-light;
   margin-left: 30px;
 }
 
 .button-white:hover {
   text-decoration: none;
-  color: #fff;
+  color: $color-light;
   background: 0 0;
 }
 
 .btn-default {
-  background-color: #dab33e;
-  color: #fff;
-  border-color: #dab33d;
+  background-color: $color-theme;
+  color: $color-light;
+  border-color: $color-theme;
   border-radius: 0;
   font-family: sans-serif;
   font-size: 16px;
@@ -51,9 +49,9 @@
 }
 
 .btn-default:hover {
-  background-color: rgba(218, 179, 62, 0.8);
-  color: #fff;
-  border-color: #dab33d;
+  background-color: rgba($color-theme, 0.8);
+  color: $color-light;
+  border-color: $color-theme-dark;
   border-radius: 0;
   font-family: sans-serif;
   font-size: 16px;
@@ -63,10 +61,10 @@
 }
 
 .btn-default:active {
-  background-color: rgba(218, 179, 62, 0.8);
-  color: #fff;
-  border-color: #dab33d;
-  outline-color: #dab33d;
+  background-color: rgba($color-theme, 0.8);
+  color: $color-light;
+  border-color: $color-theme-dark;
+  outline-color: $color-theme-dark;
   border-radius: 0;
   font-family: sans-serif;
   font-size: 16px;
@@ -76,10 +74,10 @@
 }
 
 .btn-default:focus {
-  background-color: rgba(218, 179, 62, 0.8);
-  color: #fff;
-  border-color: #dab33d;
-  outline-color: #dab33d;
+  background-color: rgba($color-theme, 0.8);
+  color: $color-light;
+  border-color: $color-theme-dark;
+  outline-color: $color-theme-dark;
   border-radius: 0;
   font-family: sans-serif;
   font-size: 16px;
@@ -89,7 +87,5 @@
 }
 
 @media screen and (max-width: 640px) {
-  .button-white {
-    margin-left: 0;
-  }
+  .button-white { margin-left: 0; }
 }
