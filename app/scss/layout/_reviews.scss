@@ -1,0 +1,29 @@
+/* =======================
+   Layout/Reviews
+   ======================= */
+
+#l-reviews {
+  background: url(../img/reviews-bg.jpg);
+  background-size: cover;
+}
+
+#l-reviews  p { font-family: $font-default; }
+
+#l-reviews-guest {
+  color: $color-light;
+  background-color: rgba($color-dark, 0.8);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 50px 60px 50px 60px;
+}
+
+#l-reviews-guest p { padding-top: 30px; }
+
+#l-reviews-quote {
+  color: $color-less-dark;
+  position: relative;
+  font-size: 30px;
+  right: 5px;
+  bottom: 5px;
+  font-weight: lighter;
+}

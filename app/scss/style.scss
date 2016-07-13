@@ -1,0 +1,55 @@
+/* ===========================
+   Google fonts
+   =========================== */
+@import url("https://fonts.googleapis.com/css?family=Lato|Yeseva+One");
+
+@import "base";
+@import "components/variables";
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/about";
+@import "layout/ingredients";
+@import "layout/menu";
+@import "layout/reviews";
+@import "layout/reservations";
+@import "layout/footer";
+
+@import "components/form";
+@import "components/button";
+
+
+.m-t-0 { margin-top: 0; }
+
+.yellow { color: $color-theme; }
+
+.border {
+  padding-top: 15px;
+  border-top: 1px solid rgba($color-theme, 0.75);
+
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #494d4e;
+  margin-right: 19px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  border-radius: 0;
+}

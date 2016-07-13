@@ -1,0 +1,16 @@
+{
+	"paths": {
+    "source": "app",
+    "distribution": "dist",
+		"vendorcss": [
+			"bower_components/bootstrap/dist/css/bootstrap.css",
+			"bower_components/font-awesome/css/font-awesome.css",
+			"bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css"
+		],
+		"vendorjs": [
+			"bower_components/jquery/dist/jquery.js",
+			"bower_components/bootstrap/dist/js/bootstrap.js",
+			"bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"
+		]
+	}
+}

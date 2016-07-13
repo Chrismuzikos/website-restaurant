@@ -1,0 +1,105 @@
+/* =======================
+   Layout/Navbar
+   ======================= */
+
+@media screen and (max-width: 640px) {
+  .l-navbar-brand img {
+    width: 120px;
+    height: 75px;
+  }
+}
+
+.l-navbar-brand { padding-top: 0; }
+
+nav ul {
+  height: 70px;
+  padding-top: 40px;
+}
+
+.l-navbar-links {
+  color: $color-light;
+  padding: 0 10px 0 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  padding-top: 42px;
+}
+
+.l-navbar-links:hover, .l-navbar-links:active, .l-navbar-links:focus {
+  color: $color-light;
+  border-top: 3px solid $color-light;
+  text-decoration: none;
+}
+
+.l-navbar-social {
+  font-size: 20px;
+  color: $color-theme;
+  padding-top: 42px;
+}
+
+.l-navbar-social:hover {
+  color: $color-theme;
+  border-top: 3px solid $color-theme;
+  padding-top: 39px;
+}
+
+.l-navbar-social:focus { color: $color-theme; }
+
+/* Navbar dropdown menu */
+.l-navbar-dropdown-menu {
+  margin-top: 5px;
+  box-shadow: 1px 1px 4px $color-less-light;
+  border-color: $color-dark;
+  height: 390px;
+  background-color: rgba($color-dark, 0.8);
+}
+.l-navbar-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: $color-light !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+
+.dropdown-menu li > a:hover { background: transparent !important; }
+
+.l-navbar-dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: $color-dark;
+  transform: rotate(45deg);
+  border-left: 1px solid $color-less-light;
+  border-top: 1px solid $color-less-light;
+}
+
+.l-navbar-item {
+  position: relative;
+  top: -25px;
+  right: 20px;
+}
+
+.dropdown > i {
+  font-size: 30px;
+  color: $color-light;
+}
+
+.l-navbar-links-dropdown { color: $color-light !important; }
+
+.l-navbar-links-dropdown:hover {
+  color: $color-light !important;
+  border-left: 3px solid $color-light;
+  text-decoration: none;
+  background: transparent !important;
+}
+
+.l-navbar-social-dropdown { color: $color-theme !important; }
+
+.l-navbar-social-dropdown:hover {
+  color: $color-theme !important;
+  border-left: 3px solid $color-theme;
+  background: transparent !important;
+}
