@@ -6,7 +6,6 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Lato-Regular.ttf");
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: 'Yeseva One';
@@ -74,7 +73,7 @@ hr {
 
 @media screen and (max-width: 768px) {
   .l-banner h1 {
-    font-size: 50px;
+    font-size: 3.6em;
   }
 
   .l-banner {
@@ -83,7 +82,7 @@ hr {
 }
 @media screen and (max-width: 640px) {
   .l-banner h1 {
-    font-size: 40px;
+    font-size: 2.9em;
     margin-bottom: 20px;
   }
 }
