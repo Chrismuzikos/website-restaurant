@@ -15,8 +15,9 @@
  src: url('../fonts/YesevaOne-Regular.ttf');
 }
 
-@import "base";
-@import "components/variables";
+@import "base/base";
+@import "base/variables";
+
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/about";
@@ -26,8 +27,8 @@
 @import "layout/reservations";
 @import "layout/footer";
 
-@import "components/form";
-@import "components/button";
+@import "module/form";
+@import "module/button";
 
 
 .m-t-0 { margin-top: 0; }
