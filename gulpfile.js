@@ -9,12 +9,12 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
-    livereload = require('gulp-livereload'),
     del = require('del'),
     copy = require('gulp-copy'),
     filter = require('gulp-filter'),
     config = require('./gulp-config.json'),
-    sourcemaps = require('gulp-sourcemaps');
+    sourcemaps = require('gulp-sourcemaps'),
+    browserSync = require('browser-sync');
 
 // Clean task
 gulp.task('cln', function() {
@@ -43,8 +43,8 @@ gulp.task('css', function() {
     // .pipe(sourcemaps.init())
     // .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.paths.distribution + '/css'))
-    .pipe(livereload())
-    .pipe(notify({ message: 'Styles task complete' }));
+    .pipe(browserSync.stream());
+    // .pipe(notify({ message: 'Styles task complete' }));
 });
 
 // Scripts task
@@ -70,7 +70,7 @@ gulp.task('js', function() {
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.paths.distribution + '/js'))
-    .pipe(livereload())
+    .pipe(browserSync.stream())
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
@@ -79,7 +79,7 @@ gulp.task('img', function() {
   return gulp.src(config.paths.source + '/img/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
     .pipe(gulp.dest(config.paths.distribution + '/img'))
-    .pipe(livereload())
+    .pipe(browserSync.stream())
     .pipe(notify({ message: 'Images task complete' }));
 });
 
@@ -87,7 +87,7 @@ gulp.task('img', function() {
 gulp.task('cp-fonts', function () {
   gulp.src(config.paths.vendorfonts)
   .pipe( copy( config.paths.distribution + '/fonts/' , { prefix : 10 } ) )
-  .pipe(livereload())
+  .pipe(browserSync.stream())
   .pipe(notify({ message: 'Copy fonts task complete' }));
 });
 
@@ -95,24 +95,28 @@ gulp.task('cp-fonts', function () {
 gulp.task('cp-html', function () {
   gulp.src(config.paths.source + '/*.html')
     .pipe( copy( config.paths.distribution, { prefix : 10 } ) )
-    .pipe(livereload())
+    .pipe(browserSync.stream())
     .pipe(notify({ message: 'Copy html task complete' }));
 });
 
-// Watch task
+// Static server
 gulp.task('watch', function() {
-  // Create LiveReload server
-  livereload.listen();
-  // Watch .scss files
-  gulp.watch(config.paths.source + '/scss/**/*.scss', ['css']);
-  // Watch .js files
-  gulp.watch(config.paths.source + '/js/**/*.js', ['js']);
-  // Watch image files
-  gulp.watch(config.paths.source + '/img/**/*', ['img']);
-  // Watch .html files
-  gulp.watch(config.paths.source + '/*.html', ['cp-html']);
-  // Watch fonts files
-  gulp.watch(config.paths.source + '/fonts', ['cp-fonts']);
+    browserSync.init({
+        server: {
+            baseDir: (config.paths.distribution)
+        }
+    });
+    gulp.watch(config.paths.source + '/scss/**/*.scss', ['css']);
+    // Watch .js files
+    gulp.watch(config.paths.source + '/js/**/*.js', ['js']);
+    // Watch image files
+    gulp.watch(config.paths.source + '/img/**/*', ['img']);
+    // Watch .html files
+    gulp.watch(config.paths.source + '/*.html', ['cp-html']);
+    // Watch fonts files
+    gulp.watch(config.paths.source + '/fonts', ['cp-fonts']);
+    // Reload browser Sync
+    gulp.watch(config.paths.distribution + '/*.html').on('change', browserSync.reload);
 });
 
 // The default task for build
