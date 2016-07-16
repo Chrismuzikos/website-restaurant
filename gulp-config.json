@@ -14,7 +14,8 @@
 		],
 		"vendorfonts": [
 			"bower_components/bootstrap-sass-official/assets/fonts/**/*",
-			"bower_components/font-awesome/fonts/**/*"
+			"bower_components/font-awesome/fonts/**/*",
+			"app/fonts/**/*"
 		]
 	}
 }
