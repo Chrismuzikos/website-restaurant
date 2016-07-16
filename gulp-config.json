@@ -11,6 +11,10 @@
 			"bower_components/jquery/dist/jquery.js",
 			"bower_components/bootstrap/dist/js/bootstrap.js",
 			"bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"
+		],
+		"vendorfonts": [
+			"bower_components/bootstrap-sass-official/assets/fonts/**/*",
+			"bower_components/font-awesome/fonts/**/*"
 		]
 	}
 }

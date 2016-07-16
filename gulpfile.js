@@ -85,10 +85,8 @@ gulp.task('img', function() {
 
 // Copy fonts vendor task perso
 gulp.task('cp-fonts', function () {
-  gulp.src( [
-		'bower_components/bootstrap-sass-official/assets/fonts/**/*',
-		'bower_components/font-awesome/fonts/**/*',
-	] ).pipe( copy( config.paths.distribution + '/fonts/' , { prefix : 10 } ) )
+  gulp.src(config.paths.vendorfonts)
+  .pipe( copy( config.paths.distribution + '/fonts/' , { prefix : 10 } ) )
   .pipe(livereload())
   .pipe(notify({ message: 'Copy fonts task complete' }));
 });
