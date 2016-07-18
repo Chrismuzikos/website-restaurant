@@ -4,27 +4,77 @@
 
 body {
   margin: 0;
-  font-family: 'Yeseva One', cursive;
+  font-family: $font-default, cursive;
 }
 
 h2 {
-  font-family: 'Yeseva One', cursive;
+  font-family: $font-default, cursive;
   font-size: 36px;
 }
 
 h3 {
-  color: #dab33e;
-  font-family: 'Yeseva One', cursive;
+  color: $color-theme;
+  font-family: $font-default, cursive;
   padding-bottom: 5px;
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: $font-variant, sans-serif;
   font-size: 16px;
 }
 
 hr {
   border : 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(204, 153, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba($color-dark, 0), rgba($color-theme, 0.75), rgba($color-dark, 0));
 }
+
+nav ul {
+  height: 70px;
+  padding-top: 40px;
+}
+
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
+*/
+
+.ptn,.pvn,.pan{padding-top:0px !important}
+.pts,.pvs,.pas{padding-top:5px !important}
+.ptm,.pvm,.pam{padding-top:10px !important}
+.ptl,.pvl,.pal{padding-top:20px !important}
+.ptxl,.pvxl,.paxl{padding-top:30px !important}
+.prn,.phn,.pan{padding-right:0px !important}
+.prs,.phs,.pas{padding-right:5px !important}
+.prm,.phm,.pam{padding-right:10px !important}
+.prl,.phl,.pal{padding-right:20px !important}
+.pbn,.pvn,.pan{padding-bottom:0px !important}
+.pbs,.pvs,.pas{padding-bottom:5px !important}
+.pbm,.pvm,.pam{padding-bottom:10px !important}
+.pbl,.pvl,.pal{padding-bottom:20px !important}
+.pln,.phn,.pan{padding-left:0px !important}
+.pls,.phs,.pas{padding-left:5px !important}
+.plm,.phm,.pam{padding-left:10px !important}
+.pll,.phl,.pal{padding-left:20px !important}
+.mtn,.mvn,.man{margin-top:0px !important}
+.mts,.mvs,.mas{margin-top:5px !important}
+.mtm,.mvm,.mam{margin-top:10px !important}
+.mtl,.mvl,.mal{margin-top:20px !important}
+.mtxl,.mvxl,.maxl{margin-top:30px !important}
+.mrn,.mhn,.man{margin-right:0px !important}
+.mrs,.mhs,.mas{margin-right:5px !important}
+.mrm,.mhm,.mam{margin-right:10px !important}
+.mrl,.mhl,.mal{margin-right:20px !important}
+.mbn,.mvn,.man{margin-bottom:0px !important}
+.mbs,.mvs,.mas{margin-bottom:5px !important}
+.mbm,.mvm,.mam{margin-bottom:10px !important}
+.mbl,.mvl,.mal{margin-bottom:20px !important}
+.mbxl,.mvxl,.maxl{margin-bottom:30px !important}
+.mbxxl,.mvxxl,.maxxl{margin-bottom:50px !important}
+.mln,.mhn,.man{margin-left:0px !important}
+.mls,.mhs,.mas{margin-left:5px !important}
+.mlm,.mhm,.mam{margin-left:10px !important}
+.mll,.mhl,.mal{margin-left:20px !important}
+.mra,.mha{margin-right:auto !important}
+.mla,.mha{margin-left:auto !important}

@@ -9,14 +9,21 @@
 }
 
 @font-face {
+ font-family: 'Lato light';
+ font-style: normal;
+ font-weight: 300;
+ src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
  font-family: 'Yeseva One';
  font-style: normal;
  font-weight: 400;
  src: url('../fonts/YesevaOne-Regular.ttf');
 }
 
-@import "base/base";
 @import "base/variables";
+@import "base/base";
 
 @import "layout/header";
 @import "layout/navbar";
@@ -29,6 +36,7 @@
 
 @import "module/form";
 @import "module/button";
+@import "module/item";
 
 
 .m-t-0 { margin-top: 0; }
@@ -41,7 +49,7 @@
 
 }
 
-img.displayed {
+.img-center {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +59,7 @@ img.displayed {
   width: 100px;
   height: 100px;
   border: 5px solid #494d4e;
-  margin-right: 19px;
+  // margin-right: 19px;
 }
 
 form {
