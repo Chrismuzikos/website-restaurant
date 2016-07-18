@@ -481,7 +481,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
    Layout/Footer
    ======================= */
 .l-footer {
-  background-color: #000;
+  background-color: #191919;
   color: #E6E6E6;
 }
 
@@ -496,6 +496,19 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 /* =======================
    Module/Form
    ======================= */
+form {
+  margin-top: 30px;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 .form-control:focus {
   border-color: #dab33e;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(218, 179, 62, 0.6);
@@ -537,10 +550,11 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   background-color: rgba(0, 0, 0, 0.5);
   border-color: #000;
 }
-.button-black:hover {
+.button-black:hover, .button-black:focus {
   text-decoration: none;
   color: #fff;
   background: #000;
+  outline: none;
 }
 
 .button-white {
@@ -548,10 +562,11 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   border-color: #fff;
   margin-left: 30px;
 }
-.button-white:hover {
+.button-white:hover, .button-white:focus {
   text-decoration: none;
   color: #fff;
   background: 0 0;
+  outline: none;
 }
 
 .button-default {
@@ -575,6 +590,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   padding: 7px 60px;
   font-weight: lighter;
   margin-top: 30px;
+  outline: none;
 }
 
 @media screen and (max-width: 640px) {
@@ -592,12 +608,12 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   color: #dab33e;
 }
 
-.m-t-0 {
-  margin-top: 0;
-}
-
 .color-theme {
   color: #dab33e;
+}
+
+.color-theme-dark {
+  color: #dab33d;
 }
 
 .border {
@@ -615,17 +631,4 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   width: 100px;
   height: 100px;
   border: 5px solid #494d4e;
-}
-
-form {
-  margin-top: 30px;
-}
-
-input {
-  border-radius: 0 !important;
-}
-
-select.form-control {
-  -webkit-appearance: none;
-  border-radius: 0;
 }

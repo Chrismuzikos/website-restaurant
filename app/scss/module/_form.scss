@@ -2,6 +2,19 @@
    Module/Form
    ======================= */
 
+form {
+ margin-top: 30px;
+}
+
+input {
+ border-radius: 0 !important;
+}
+
+select.form-control {
+ -webkit-appearance: none;
+ border-radius: 0;
+}
+
 .form-control:focus {
   border-color: #dab33e;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(218, 179, 62, 0.6);
